@@ -1,0 +1,76 @@
+.highscores{
+    width: 800px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.hs-table{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+
+.hs-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+}
+
+.hs-table-data{
+    margin-top: 20px;
+}
+
+.hs-table-data > :nth-child(even) .hs-data{
+    background-color: var(--color-light-gray);
+}
+
+
+.hs-rank{
+    width: 30px; 
+    text-align: center;   
+    display: inline-block; 
+    padding: 5px 0;
+}
+
+.rank-top{
+    font-weight: 800;
+    background-color: var(--color-gold);
+    border-radius: 10px;
+}
+
+.hs-user{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+
+}
+.hs-number{
+    width: 40px;
+    padding-left: 10px;
+    border-left: 2px var(--color-dark-gray) solid;
+    color: var(--color-blue-dark);
+    font-weight: 800;
+    text-align: right;
+}
+
+
+.hs-title, #hs-filter{
+    font-weight: 800;
+}
+
+#hs-filter{
+    padding: 5px;
+    padding-right: 20px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
