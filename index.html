@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"/>
+</head>
+<body>
+    <div class="sudoku-container">
+        <div class="sudoku-table">
+            <div class="cell-group cell-group-top">
+                <div class="cell row1 col1 cell-num2"><span>2</span></div>
+                <div class="cell row1 col2 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row1 col3 cell-num3"><span>3</span></div>
+                <div class="cell row2 col1 cell-num8"><span>8</span></div>
+                <div class="cell row2 col2 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row2 col3 cell-num9"><span>9</span></div>
+                <div class="cell row3 col1 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row3 col2 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row3 col3 cell-num6"><span>6</span></div>
+            </div>
+            <div class="cell-group cell-group-top">
+                <div class="cell row1 col4 cell-num4"><span>4</span></div>
+                <div class="cell row1 col5 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row1 col6 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row2 col4 cell-num1"><span>1</span></div>
+                <div class="cell row2 col5 cell-num6"><span>6</span></div>
+                <div class="cell row2 col6 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row3 col4 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row3 col5 cell-num3"><span>3</span></div>
+                <div class="cell row3 col6 cell-empty"><span>&nbsp;</span></div>
+            </div>
+            <div class="cell-group cell-group-top cell-group-right">
+                <div class="cell row1 col7 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row1 col8 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row1 col9 cell-num5"><span>5</span></div>
+                <div class="cell row2 col7 cell-num7"><span>7</span></div>
+                <div class="cell row2 col8 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row2 col9 cell-num4"><span>4</span></div>
+                <div class="cell row3 col7 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row3 col8 cell-num1"><span>1</span></div>
+                <div class="cell row3 col9 cell-num9"><span>9</span></div>
+            </div>
+            <div class="cell-group">
+                <div class="cell row4 col1 cell-num7"><span>7</span></div>
+                <div class="cell row4 col2 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row4 col3 cell-num2"><span>2</span></div>
+                <div class="cell row5 col1 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row5 col2 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row5 col3 cell-num8"><span>8</span></div>
+                <div class="cell row6 col1 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row6 col2 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row6 col3 cell-num1"><span>1</span></div>
+            </div>
+            <div class="cell-group">
+                <div class="cell row4 col4 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row4 col5 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row4 col6 cell-num3"><span>3</span></div>
+                <div class="cell row5 col4 cell-num2"><span>2</span></div>
+                <div class="cell row5 col5 cell-num5"><span>5</span></div>
+                <div class="cell row5 col6 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row6 col4 cell-num6"><span>6</span></div>
+                <div class="cell row6 col5 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row6 col6 cell-num7"><span>7</span></div>
+            </div>
+            <div class="cell-group cell-group-right">
+                <div class="cell row4 col7 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row4 col8 cell-num6"><span>6</span></div>
+                <div class="cell row4 col9 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row5 col7 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row5 col8 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row5 col9 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row6 col7 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row6 col8 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row6 col9 cell-num2"><span>2</span></div>
+            </div>
+            <div class="cell-group">
+                <div class="cell row7 col1 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row7 col2 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row7 col3 cell-num7"><span>7</span></div>
+                <div class="cell row8 col1 cell-num9"><span>9</span></div>
+                <div class="cell row8 col2 cell-num3"><span>3</span></div>
+                <div class="cell row8 col3 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row9 col1 cell-num6"><span>6</span></div>
+                <div class="cell row9 col2 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row9 col3 cell-empty"><span>&nbsp;</span></div>
+            </div>
+            <div class="cell-group">
+                <div class="cell row7 col4 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row7 col5 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row7 col6 cell-num5"><span>5</span></div>
+                <div class="cell row8 col4 cell-num7"><span>7</span></div>
+                <div class="cell row8 col5 cell-num2"><span>2</span></div>
+                <div class="cell row8 col6 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row9 col4 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row9 col5 cell-num9"><span>9</span></div>
+                <div class="cell row9 col6 cell-empty"><span>&nbsp;</span></div>
+            </div>
+            <div class="cell-group cell-group-right">
+                <div class="cell row7 col7 cell-num9"><span>9</span></div>
+                <div class="cell row7 col8 cell-num2"><span>2</span></div>
+                <div class="cell row7 col9 cell-num6"><span>6</span></div>
+                <div class="cell row8 col7 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row8 col8 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row8 col9 cell-empty"><span>&nbsp;</span></div>
+                <div class="cell row9 col7 cell-num4"><span>4</span></div>
+                <div class="cell row9 col8 cell-num7"><span>7</span></div>
+                <div class="cell row9 col9 cell-empty"><span>&nbsp;</span></div>
+            </div>
+        </div>
+        <div class="select-container">
+            <div class="select-action"><i class="ri-restart-line"></i><span>Restart</span></div>
+            <div class="select-action"><i class="ri-arrow-go-back-line"></i><span>Undo</span></div>
+            <div class="select-action"><i class="ri-lightbulb-ai-line"></i><span>Hint</span></div>
+            <div class="select-action"><i class="ri-pause-line"></i><span>Pause</span></div>
+        </div>
+        <div class="select-container">
+            <div class="select-num select-num1"><span>1</span></div>
+            <div class="select-num select-num2"><span>2</span></div>
+            <div class="select-num select-num3"><span>3</span></div>
+            <div class="select-num select-num4"><span>4</span></div>
+            <div class="select-num select-num5"><span>5</span></div>
+            <div class="select-num select-num6"><span>6</span></div>
+            <div class="select-num select-num7"><span>7</span></div>
+            <div class="select-num select-num8"><span>8</span></div>
+            <div class="select-num select-num9"><span>9</span></div>
+            <div class="select-num select-erase"><span><i class="ri-eraser-line"></i></span></div>
+        </div>
+    </div>
+</body>
+</html>

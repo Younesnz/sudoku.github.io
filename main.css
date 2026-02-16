@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-family: "Noto Sans", sans-serif;
+    user-select: none;
+}
+
+.sudoku-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sudoku-table {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 500px;
+    height: 500px;
+}
+
+.cell-group {
+    display: grid;
+    padding: 0.3rem;
+    margin: 0rem;
+    grid-template-columns: repeat(3,1fr);
+    border-left: 1px #eee solid;
+    border-bottom: 1px #eee solid;
+    gap: 0.2rem;
+}
+
+.cell-group-top{
+    border-top: 1px #eee solid;
+}
+
+.cell-group-right{
+    border-right: 1px #eee solid;
+}
+
+.cell {
+    background-color: #eee;
+    border-radius: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 20pt;
+}
+
+.cell:hover{
+    /* background-color: #f9d185 !important; */
+    cursor: pointer;
+}
+
+.cell-empty:hover{
+    background-color: #f9d185 !important;
+    scale: 1.05;
+}
+
+.cell-group:has(.cell:hover) .cell{
+    background-color: #ddd;
+}
+
+.sudoku-table:has(.cell-num1:hover) .cell-num1,
+.sudoku-table:has(.cell-num2:hover) .cell-num2,
+.sudoku-table:has(.cell-num3:hover) .cell-num3,
+.sudoku-table:has(.cell-num4:hover) .cell-num4,
+.sudoku-table:has(.cell-num5:hover) .cell-num5,
+.sudoku-table:has(.cell-num6:hover) .cell-num6,
+.sudoku-table:has(.cell-num7:hover) .cell-num7,
+.sudoku-table:has(.cell-num8:hover) .cell-num8,
+.sudoku-table:has(.cell-num9:hover) .cell-num9,
+.sudoku-container:has(.select-num1:hover) .cell-num1,
+.sudoku-container:has(.select-num2:hover) .cell-num2,
+.sudoku-container:has(.select-num3:hover) .cell-num3,
+.sudoku-container:has(.select-num4:hover) .cell-num4,
+.sudoku-container:has(.select-num5:hover) .cell-num5,
+.sudoku-container:has(.select-num6:hover) .cell-num6,
+.sudoku-container:has(.select-num7:hover) .cell-num7,
+.sudoku-container:has(.select-num8:hover) .cell-num8,
+.sudoku-container:has(.select-num9:hover) .cell-num9{
+    background-color: #88c8e2 !important;
+    scale: 1.05;
+}
+
+
+
+
+.sudoku-table:has(.row1:hover) .row1,
+.sudoku-table:has(.row2:hover) .row2,
+.sudoku-table:has(.row3:hover) .row3,
+.sudoku-table:has(.row4:hover) .row4,
+.sudoku-table:has(.row5:hover) .row5,
+.sudoku-table:has(.row6:hover) .row6,
+.sudoku-table:has(.row7:hover) .row7,
+.sudoku-table:has(.row8:hover) .row8,
+.sudoku-table:has(.row9:hover) .row9{
+    background-color: #ddd;
+}
+
+.sudoku-table:has(.col1:hover) .col1,
+.sudoku-table:has(.col2:hover) .col2,
+.sudoku-table:has(.col3:hover) .col3,
+.sudoku-table:has(.col4:hover) .col4,
+.sudoku-table:has(.col5:hover) .col5,
+.sudoku-table:has(.col6:hover) .col6,
+.sudoku-table:has(.col7:hover) .col7,
+.sudoku-table:has(.col8:hover) .col8,
+.sudoku-table:has(.col9:hover) .col9{
+    background-color: #ddd;
+}
+
+/* .cell-group:not(.cell-group3,.cell-group6,.cell-group9){
+    border-right: 1px #bebebe solid;
+}
+
+.cell-group:not(.cell-group7,.cell-group8,.cell-group9){
+    border-bottom: 1px #bebebe solid;
+} */
+
+
+.select-container {
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 10px;
+}
+
+.select-num {
+    padding: 10px;
+    font-size: 24pt;
+    color: #008bc4;
+}
+
+.select-num:hover {
+    cursor: pointer;
+    scale: 1.2;
+}
+
+.select-erase{
+    font-size: 18pt;
+    background-color: #008bc4;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-action {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 15px;
+    border: 2px #ddd solid;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 11pt;
+}
+
+.select-action:hover {
+    cursor: pointer;
+    background-color: #f9d185;
+    border-color: #f9d185;
+}
+
+.select-action:hover i{
+    scale: 1.3;
+}
