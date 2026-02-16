@@ -1,0 +1,55 @@
+.rules{
+    width: 800px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.rules *{
+    margin-bottom: 10px;
+}
+
+.sudoku-rules h1{
+    margin-bottom: 24px;
+}
+article p, article ul{
+    margin-left: 24px;
+}
+
+hr{
+    margin: 48px 0;
+}
+
+
+.animated-name {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(
+      to right, 
+     #0b5a96, #b35353, #37a780, #a168ae, #1a2a6c
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-shift 7s linear infinite;
+  }
+
+  @keyframes gradient-shift {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+  }
+
+ .credit-links{
+    margin-left: 12px;
+ }
+
+ .credit-links a {
+    display: inline-block;
+    font-size: 18pt;
+    margin-right: 12px;
+ }
+
+ .credit-links a:hover{
+    color: var(--color-blue-dark);
+    scale: 1.2;
+ }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/rules.css">
+    
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Sudoku</h1>
+        <ul class="links">
+            <li><a class="navlink" href="#">Home</a></li>
+            <li><a class="navlink" href="#">Select Game</a></li>
+            <li>
+                <div class="difficulty">
+                    <a href="/game/easy/" class="difficulty-option">
+                        <i class="ri-user-smile-line"></i> <span>Easy</span>
+                    </a>
+                    <a href="/game/hard/" class="difficulty-option">
+                        <i class="ri-skull-2-line"></i> <span>Hard</span>
+                    </a>
+                </div>
+            </li>
+            <li><a class="navlink selected-nav" href="#">Rules</a></li>
+            <li><a class="navlink" href="/high-scores/">High Scores</a></li>
+        </ul>
+        <div class="profile">
+            <img class="profile-picture" src="/src/profile01.jpg" alt="profile picture of the user">
+            <div class="user">
+                <span class="username">Younes</span>
+                <a class="logout" href="#">Sign out</a>
+            </div>
+            
+        </div>
+    </nav>
+
+    <main class="rules">
+        <section class="sudoku-rules">
+            <h1>How to Play Sudoku</h1>
+            <p>Sudoku is a logic-based, combinatorial number-placement puzzle. The objective is to fill the grid so that every row, column, and subgrid contains all of the digits without repetition.</p>
+
+            <article class="rules-6x6">
+            <h2>Easy: 6x6 Sudoku</h2>
+            <p>Perfect for beginners, the 6x6 grid uses digits <strong>1 through 6</strong>.</p>
+            <ul>
+                <li><strong>The Grid:</strong> A 6x6 layout divided into six 2x3 rectangular blocks.</li>
+                <li><strong>The Goal:</strong> Each row, each column, and each 2x3 block must contain the numbers 1-6 exactly once.</li>
+            </ul>
+            </article>
+
+            <article class="rules-9x9">
+            <h2>Hard: 9x9 Sudoku</h2>
+            <p>The classic challenge using digits <strong>1 through 9</strong>.</p>
+            <ul>
+                <li><strong>The Grid:</strong> A 9x9 layout divided into nine 3x3 square blocks.</li>
+                <li><strong>The Goal:</strong> Each row, each column, and each 3x3 block must contain the numbers 1-9 exactly once.</li>
+            </ul>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="credits">
+            <h3>Made By</h3>
+            <div class="author-details">
+                <p>
+                    <span class="animated-name">Younes Nourzehi</span>
+                </p> 
+                <div class="credit-links">
+                    <a title="email" href="mailto:nourzehi.y@northeastern.eduuuu"><i class="ri-mail-line"></i></a>
+                    <a title="GitHub" href="https://github.com/Younesnz/sudoku"><i class="ri-github-fill"></i></a>
+                    <a title="LinkedIn" href="https://www.linkedin.com/in/younesnz/"><i class="ri-linkedin-box-fill"></i></a>
+                    <a title="Portfolio" href="https://www.younesnz.com/"><i class="ri-global-line"></i></a>
+                </div> 
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
