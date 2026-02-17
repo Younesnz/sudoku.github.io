@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/selection.css">
+    
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Sudoku</h1>
+        <ul class="links">
+            <li><a class="navlink" href="#">Home</a></li>
+            <li><a class="navlink selected-nav" href="#">Select Game</a></li>
+            <li>
+                <div class="difficulty">
+                    <a href="/game/easy/" class="difficulty-option">
+                        <i class="ri-user-smile-line"></i> <span>Easy</span>
+                    </a>
+                        <a href="/game/hard/" class="difficulty-option">
+                        <i class="ri-skull-2-line"></i> <span>Hard</span>
+                    </a>
+                </div>
+            </li>
+            <li><a class="navlink" href="/rules/">Rules</a></li>
+            <li><a class="navlink" href="/high-scores/">High Scores</a></li>
+        </ul>
+        <div class="profile">
+            <img class="profile-picture" src="/src/profile01.jpg" alt="profile picture of the user">
+            <div class="user">
+                <span class="username">Younes</span>
+                <a class="logout" href="#">Sign out</a>
+            </div>
+            
+        </div>
+    </nav>
+    <main class="selection">
+        <h1>Select Game</h1>
+        <div class="selection-container">
+            <div class="cart">
+                <div class="cart-pic">
+                    <img src="/src/game-pic1.jpg" alt="Coffee Sudoku">
+                </div>
+                <h3>Coffee Sudoku</h2>
+                <div class="cart-difficulty">
+                    <i class="ri-user-smile-line"></i> <span>Easy</span>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-author">
+                        <span>By </span>
+                        <img src="/src/profile05.jpg" alt="user profile picture">
+                        <span class="cart-username">Monika</span>
+                    </div>
+                    <div class="cart-link">
+                        <i class="ri-arrow-right-circle-line"></i>
+                    <a href="/game/easy/">Play</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart">
+                <div class="cart-pic">
+                    <img src="/src/game-pic2.jpg" alt="The Infinite Nine">
+                </div>
+                <h3>The Infinite Nine</h2>
+                <div class="cart-difficulty">
+                    <i class="ri-skull-2-line"></i> <span>Hard</span>                
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-author">
+                        <span>By </span>
+                        <img src="/src/profile03.jpg" alt="user profile picture">
+                        <span class="cart-username">Hunter</span>
+                    </div>
+                    <div class="cart-link">
+                        <i class="ri-arrow-right-circle-line"></i>
+                    <a href="/game/hard/">Play</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart">
+                <div class="cart-pic">
+                    <img src="/src/game-pic3.jpg" alt="The Lost Grid">
+                </div>
+                <h3>The Lost Grid</h2>
+                <div class="cart-difficulty">
+                    <i class="ri-skull-2-line"></i> <span>Hard</span>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-author">
+                        <span>By </span>
+                        <img src="/src/profile11.jpg" alt="user profile picture">
+                        <span class="cart-username">Jackie</span>
+                    </div>
+                    <div class="cart-link">
+                        <i class="ri-arrow-right-circle-line"></i>
+                    <a href="/game/hard/">Play</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart">
+                <div class="cart-pic">
+                    <img src="/src/game-pic4.jpg" alt="Breaking Bad Sudoku">
+                </div>
+                <h3>Breaking Bad Sudoku</h2>
+                <div class="cart-difficulty">
+                    <i class="ri-skull-2-line"></i> <span>Hard</span>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-author">
+                        <span>By </span>
+                        <img src="/src/profile13.jpg" alt="user profile picture">
+                        <span class="cart-username">Walter</span>
+                    </div>
+                    <div class="cart-link">
+                        <i class="ri-arrow-right-circle-line"></i>
+                    <a href="/game/hard/">Play</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart">
+                <div class="cart-pic">
+                    <img src="/src/game-pic5.jpg" alt="Sudoku & Dragons">
+                </div>
+                <h3>Sudoku & Dragons</h2>
+                <div class="cart-difficulty">
+                    <i class="ri-skull-2-line"></i> <span>Hard</span>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-author">
+                        <span>By </span>
+                        <img src="/src/profile01.jpg" alt="user profile picture">
+                        <span class="cart-username">Younes</span>
+                    </div>
+                    <div class="cart-link">
+                        <i class="ri-arrow-right-circle-line"></i>
+                    <a href="/game/hard/">Play</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart">
+                <div class="cart-pic">
+                    <img src="/src/game-pic6.jpg" alt="Cats & Dogs Sudoku">
+                </div>
+                <h3>Cats & Dogs Sudoku</h2>
+                <div class="cart-difficulty">
+                    <i class="ri-user-smile-line"></i> <span>Easy</span>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-author">
+                        <span>By </span>
+                        <img src="/src/profile02.jpg" alt="user profile picture">
+                        <span class="cart-username">Sarah</span>
+                    </div>
+                    <div class="cart-link">
+                        <i class="ri-arrow-right-circle-line"></i>
+                    <a href="/game/easy/">Play</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+</body>
+</html>
